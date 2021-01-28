@@ -80,6 +80,27 @@ h1, #thanos {font-family: "coffeebrandsFont";
   color: #212949;
 }
 
+/*Coffeebrands back to top*/
+
+#cbbtt {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: -60px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#cbbtt:hover {
+  background-color: #555;
+}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -93,6 +114,8 @@ h1, #thanos {font-family: "coffeebrandsFont";
 }
 </style>
 <body>
+
+  <button onclick="topFunction()" id="cbbtt" title="Go to top">Top</button> 
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -397,6 +420,25 @@ function toggleFunction() {
       x[i].style.display = "none";  
     }
     x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+  
+<!-- cbbtt -->
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("cbbtt").style.right = "30px";
+    } else {document.getElementById("cbbtt").style.right = "-60px";}
+    prevScrollpos = currentScrollPos;
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
   </script>
 
