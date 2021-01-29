@@ -83,23 +83,23 @@ h1, #thanos {font-family: "coffeebrandsFont";
 /*Coffeebrands back to top*/
 
 #cbbtt {
+  width: 40px;
+  height: 40px;
   display: block;
   position: fixed;
   bottom: 20px;
   right: -60px;
   z-index: 99;
-  font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
-  color: white;
+  background-color:transparent;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 1px;
+  border-radius: 50%;
 }
 
 #cbbtt:hover {
-  background-color: #555;
+  background-color: #212949;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -115,7 +115,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </style>
 <body>
 
-  <button onclick="topFunction()" id="cbbtt" title="Go to top">Top</button> 
+  
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -144,6 +144,10 @@ h1, #thanos {font-family: "coffeebrandsFont";
     <a href="#" class="w3-bar-item w3-button"><img src="/img/english.png" style="max-width:18px;"></a>
   </div>
 </div>
+
+<button onclick="topFunction()" id="cbbtt" title="Go to top">
+  <i class="fa fa-arrow-circle-up" style="font-size:36px;color: #73A6E4;"></i>
+</button> 
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -381,16 +385,32 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-// Change style of navbar on scroll
+/**** Change style of navbar on scroll ************************************************
+ **** Only lines or blocks without cbbtt comment are responsible for the navbar. ****** */
+
+var prevScrollpos = window.pageYOffset;// cbbtt
 window.onscroll = function() {myFunction()};
+
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
+    var currentScrollPos = window.pageYOffset; // cbbtt
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+      /*cbbtt*/
+    if (prevScrollpos > currentScrollPos) { 
+      document.getElementById("cbbtt").style.right = "30px";
+    } else {document.getElementById("cbbtt").style.right = "-60px";} 
+    prevScrollpos = currentScrollPos;
+    /*cbbtt  end*/
 }
+      /*cbbtt*/
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }   /*cbbtt  end*/
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
@@ -423,23 +443,25 @@ function toggleFunction() {
   }
   </script>
 
-  
+
 <!-- cbbtt -->
 <script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("cbbtt").style.right = "30px";
-    } else {document.getElementById("cbbtt").style.right = "-60px";}
-    prevScrollpos = currentScrollPos;
-  }
+  // var prevScrollpos = window.pageYOffset;
+  // window.onscroll = function() {thanosFanction()};
+  
+  // function thanosFanction(){
+  // var currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     document.getElementById("cbbtt").style.right = "30px";
+  //   } else {document.getElementById("cbbtt").style.right = "-60px";}
+  //   prevScrollpos = currentScrollPos;
+  // }
 
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  // function topFunction() {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  // }
   </script>
 
 </body>
