@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> --> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif;}
@@ -23,7 +24,7 @@ body, html {
 }
 
 h1, #thanos {font-family: "coffeebrandsFont";
-    font-size: 78px;}
+    font-size: 78px;}   
 /*------end of custom fonts*/
 
 
@@ -76,7 +77,8 @@ h1, #thanos {font-family: "coffeebrandsFont";
   cursor: pointer;
 }
 .cbbutton:hover {
-  background-color: #73A6E4;;
+  background-color: #73A6E4;
+  text-decoration: none;
   color: #212949;
 }
 
@@ -120,10 +122,10 @@ h1, #thanos {font-family: "coffeebrandsFont";
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
+    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"> Menu</i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">Αρχική</a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">Αρχική</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Η Εταιρεία</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Προϊόντα</a>
     <a href="#franchise" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-link"></i> Franchise</a>
@@ -135,6 +137,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Αρχική</a>
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Η Εταιρεία</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Προϊόντα</a>
     <a href="#franchise" class="w3-bar-item w3-button" onclick="toggleFunction()">Franchise</a>
@@ -159,7 +162,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Η ΕΤΑΙΡΕΙΑ</h3>
+  <h1 class="w3-center">About us</h1><br>
   <p class="w3-center"><em>Η Φιλοσοφία μας...</em></p>
   <p style="font-size: 18px;">Η Coffeebrands συνέβη επειδή μοιραζόμαστε το ίδιο πάθος για μία μοναδική εμπειρία καφέ!
     Με αγάπη για τον ποιοτικό καφέ, το 2009, άνοιξε το πρώτο κατάστημα Coffeebrands. Μακριά από το εμπορικό κέντρο, σε μία εναλλακτική περιοχή της πόλης της Πάτρας, δημιουργήθηκε ο πρώτος χώρος συνάντησης των φανατικών του καφέ. Διάσημα brands καφέ, ημιεπαγγελματικός εξοπλισμός για παραγωγή καφέ στο σπίτι και το γραφείο, αλλά και η δυνατότητα να απολαύσουν premium καφέ και φρέσκα σνακ ενόσω έκαναν τις αγορές τους, εξέλιξαν το Coffeebrands σε πολλά περισσότερα από μία boutique καφέ. 
@@ -167,7 +170,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>espresso specialists</b></p><br>
-      <img src="/img/about.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="/img/about.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div> <!-- http://psofos.gr/art_factory/assets/images/left-image.png -->
 
     <!-- Hide this text on small devices -->
@@ -176,18 +179,18 @@ h1, #thanos {font-family: "coffeebrandsFont";
         Σήμερα με καταστήματα σε Ελλάδα, Κύπρο, Γερμανία, Σερβία, Dubai, Σαουδική Αραβία και με μία δυναμική εξέλιξης που υποστηρίζουν οι Coffeebrandisti σε κάθε γειτονιά του κόσμου, προσφέρουμε πολλά περισσότερα από ένα καφέ.</p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <p class="w3-large w3-center w3-padding-16">Αποτελέσματα αξιολογήσεων από πελάτες μας:</p> <!-- Our Customers Review Results: -->
+  <p class="w3-wide w3-text-blue"><i class="fa fa-check-square-o" aria-hidden="true"></i>Quality</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    <div class="w3-container w3-padding-small w3-cb-poll w3-center" style="width:90%">90%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <p class="w3-wide w3-text-blue"><i class="fa fa-cogs" aria-hidden="true"></i>Service</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    <div class="w3-container w3-padding-small w3-cb-poll w3-center" style="width:85%">85%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <p class="w3-wide w3-text-blue"><i class="fa fa-euro"></i><i class="fa fa-money" aria-hidden="true"></i>Cost</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    <div class="w3-container w3-padding-small w3-cb-poll w3-center" style="width:75%">75%</div>
   </div>
 </div>
 
@@ -226,11 +229,11 @@ h1, #thanos {font-family: "coffeebrandsFont";
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/img/ese_type.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="JJJJ The mist over the mountains">
+      <img src="/img/baboo-cap700.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="reusable - baboo cup">
     </div>
 
     <div class="w3-col m3">
-      <img src="/img/decaf.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="/img/capsules.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="coffeebrands capsules nespresso compatible">
     </div>
 
     <div class="w3-col m3">
@@ -272,7 +275,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </div>
 
 <!-- Franchise Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min">
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="franchise">
   <div class="w3-display-middle">
      <span class="w3-text-white" id="thanos">Franchise</span>
   </div>
@@ -281,7 +284,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
 
 <!-- Container (Franchise Section) -->
 
-<div class="w3-content w3-container w3-padding-64" id="franchise">
+<div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">Η ΙΔΕΑ</h3>
   <p style="font-size: 18px; margin-bottom: 50px;">Ένα κατάστημα του δικτύου Coffeebrands εξειδικεύεται στην παραγωγή του τέλειου espresso και παράλληλα προσφέρει μια ευρεία γκάμα προϊόντων με όλα τα είδη καφέ, ροφημάτων, αναψυκτικών, κρύων σάντουιτς, γλυκισμάτων, με άριστη ποιότητα και σε ανταγωνιστικές τιμές. 
     Το ευχάριστο περιβάλλον και ο σχεδιασμός του καθιστικού προσφέρονται για κατανάλωση εντός καταστήματος ενώ παράλληλα όλα τα προϊόντα παρέχονται για take away κατανάλωση ή και delivery στον χώρο του πελάτη.​
@@ -296,7 +299,28 @@ h1, #thanos {font-family: "coffeebrandsFont";
   <h3 class="w3-center">Άνοιξε το δικό σου Coffeebrands</h3>
   <p class="w3-center"><em>Αν επιθυμείς να  γίνεις συνεργάτης ή να μάθεις περισσότερα για το πως μπορείς και εσύ να ενταχθείς
      <br>στο δίκτυο καταστημάτων Coffeebrands πάτα παρακάτω για να συμπληρώσεις τα στοιχεία σου. </em></p>
-     <p class="w3-center"><a href="#" class="cbbutton">Επιθυμώ να γίνω Franchisee</a></p>
+     <p class="w3-center"><a href="#demo" class="cbbutton" data-toggle="collapse">Επιθυμώ να γίνω Franchisee</a>
+    <div id="demo" class="collapse">
+      <p>Άνοιξε το δικό σου <i class="fa fa-coffee"></i>, Coffeebrands​!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="tel" placeholder="Phone" required name="Phone">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-white w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> Αποστολή
+        </button>
+      </form>
+    </div>
+    </p>
 </div>
 
 
@@ -313,32 +337,28 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </div>
 <!-- thanos -->
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<!-- Contact Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-text-blue" id="thanos">Contact us</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Επικοινωνία</h3>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-text-blue">Στείλε μας το μήνυμά σου...</h3>
   <!-- <p class="w3-center"><em></em></p> -->
-  <p class="w3-center"><em>Αν επιθυμείς να  γίνεις συνεργάτης ή να μάθεις περισσότερα
-                          για το πως μπορείς και εσύ να ενταχθείς στο δίκτυο καταστημάτων 
-                          Coffeebrands πάτα παρακάτω για να συμπληρώσεις τα στοιχεία σου.</em></p>
-
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+      <img src="img/contact3.jpg" class="w3-image w3-round">
     </div>
-    <div class="w3-col m8 w3-panel">
+    <div class="w3-col m8 w3-panel w3-text-blue">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Πάτρα, GR<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Τηλ: +30 1515151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@coffeebrands.gr<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-cbcyan w3-xlarge w3-margin-right"></i> Πάτρα, GR<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-cbcyan w3-xlarge w3-margin-right"></i> Τηλ: +30 1515151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-cbcyan w3-xlarge w3-margin-right"></i> Email: info@coffeebrands.gr<br>
       </div>
-      <p>Άνοιξε το δικό σου <i class="fa fa-coffee"></i>, Coffeebrands​!</p>
+      
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -358,7 +378,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-64">
   <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Αρχική</a> -->
   <div class="w3-section">
     <img src="img/award-sca.png" width="70px" height="70px">

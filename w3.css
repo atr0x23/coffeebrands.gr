@@ -122,7 +122,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
 .w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
-/* .w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1} thanos opacity on hover in footer */
+.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1} /*thanos opacity like in porducts section*/
 /* .w3-opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75} thanos opacity in homepage*/
 .w3-greyscale-max,.w3-grayscale-max,.w3-hover-greyscale:hover,.w3-hover-grayscale:hover{filter:grayscale(100%)}
 .w3-greyscale,.w3-grayscale{filter:grayscale(75%)}.w3-greyscale-min,.w3-grayscale-min{filter:grayscale(50%)}
@@ -145,7 +145,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-top-64{padding-top:64px!important}.w3-padding-top-48{padding-top:48px!important}
 .w3-padding-top-32{padding-top:32px!important}.w3-padding-top-24{padding-top:24px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#212949!important;background-color:#73A6E4!important} /*thanos*/
+.w3-button:hover{color:#212949!important;background-color:#73A6E4!important;text-decoration: none;} /*thanos*/
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
@@ -170,18 +170,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-sand,.w3-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
-.w3-white,.w3-hover-white:hover{color:#73A6E4!important;background-color:#212949 !important;} /*thanos*/
+.w3-white,.w3-hover-white:hover{color:#73A6E4!important;background-color:#212949 !important} /*thanos*/
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-image: url('/img/footer.jpg');} /* thanos */
 .w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.w3-cb-poll,.w3-hover-cb-poll:hover{color:#fff!important;background-color: #73A6E4!important}/*thanos*/
 .w3-pale-red,.w3-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
 .w3-pale-green,.w3-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
 .w3-pale-blue,.w3-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
 .w3-text-amber,.w3-hover-text-amber:hover{color:#ffc107!important}
 .w3-text-aqua,.w3-hover-text-aqua:hover{color:#00ffff!important}
-.w3-text-blue,.w3-hover-text-blue:hover{color:#2196F3!important}
+.w3-text-blue,.w3-hover-text-blue:hover{color:#212949!important}
 .w3-text-light-blue,.w3-hover-text-light-blue:hover{color:#87CEEB!important}
 .w3-text-brown,.w3-hover-text-brown:hover{color:#795548!important}
 .w3-text-cyan,.w3-hover-text-cyan:hover{color:#00bcd4!important}
