@@ -60,6 +60,9 @@ h1, #thanos {font-family: "coffeebrandsFont";
   min-height: 400px;
 }
 
+/*slideshow*/
+.mySlides {display:none; animation-duration: 3.5s;}
+
 /*Coffeebrands button*/
 
 .cbbutton {
@@ -331,23 +334,23 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </div>
 
 
-<!-- thanos event section -->
+<!-- start of event section -->
 
 <h2 class="w3-center">Manual Slideshow</h2>
 
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="http://psofos.gr/art_factory/assets/images/left-image.png" style="width:100%"> 
-  <img class="mySlides" src="http://psofos.gr/art_factory/assets/images/right-image.png" style="width:100%">
+  <img class="mySlides w3-animate-right" src="http://psofos.gr/art_factory/assets/images/left-image.png" style="width:100%"> 
+  <img class="mySlides w3-animate-left" src="http://psofos.gr/art_factory/assets/images/right-image.png" style="width:100%">
 
-  <button class="w3-button w3-hover-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-hover-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <!-- <button class="w3-button w3-hover-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-hover-white w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
-<!-- thanos -->
+<!-- end of event section -->
 
 <!-- Contact Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
   <div class="w3-display-middle">
-     <span class="w3-text-white" id="thanos">Contact us</span>
+     <span class="w3-text-white" id="thanos">Contactus</span>
   </div>
 </div>
 
@@ -357,7 +360,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
   <!-- <p class="w3-center"><em></em></p> -->
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="img/contact3.jpg" class="w3-image w3-round">
+      <img src="img/contact3.jpg" class="w3-image w3-round w3-hide-small">
     </div>
     <div class="w3-col m8 w3-panel w3-text-blue">
       <div class="w3-large w3-margin-bottom">
@@ -404,92 +407,68 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
 
-/**** Change style of navbar on scroll ************************************************
- **** Only lines or blocks without cbbtt comment are responsible for the navbar. ****** */
+  /**** Change style of navbar on scroll ************************************************
+   **** Only lines or blocks without cbbtt comment are responsible for the navbar. ****** */
 
-var prevScrollpos = window.pageYOffset;// cbbtt
-window.onscroll = function() {myFunction()};
+  var prevScrollpos = window.pageYOffset;// cbbtt
+  window.onscroll = function() {myFunction()};
 
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    var currentScrollPos = window.pageYOffset; // cbbtt
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-      /*cbbtt*/
-    if (prevScrollpos > currentScrollPos) { 
-      document.getElementById("cbbtt").style.right = "30px";
-    } else {document.getElementById("cbbtt").style.right = "-60px";} 
-    prevScrollpos = currentScrollPos;
-    /*cbbtt  end*/
-}
-      /*cbbtt*/
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }   /*cbbtt  end*/
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      var currentScrollPos = window.pageYOffset; // cbbtt
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+        /*cbbtt*/
+      if (prevScrollpos > currentScrollPos) { 
+        document.getElementById("cbbtt").style.right = "30px";
+      } else {document.getElementById("cbbtt").style.right = "-60px";} 
+      prevScrollpos = currentScrollPos;
+      /*cbbtt  end*/
+  }
+        /*cbbtt*/
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }   /*cbbtt  end*/
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  /* slideshow */
+
+  var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 4500);    
+    }//end of slideshow
 </script>
-
-<script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  </script>
-
-
-<!-- cbbtt -->
-<script>
-  // var prevScrollpos = window.pageYOffset;
-  // window.onscroll = function() {thanosFanction()};
-  
-  // function thanosFanction(){
-  // var currentScrollPos = window.pageYOffset;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     document.getElementById("cbbtt").style.right = "30px";
-  //   } else {document.getElementById("cbbtt").style.right = "-60px";}
-  //   prevScrollpos = currentScrollPos;
-  // }
-
-  // When the user clicks on the button, scroll to the top of the document
-  // function topFunction() {
-  //   document.body.scrollTop = 0;
-  //   document.documentElement.scrollTop = 0;
-  // }
-  </script>
 
 </body>
 </html>
