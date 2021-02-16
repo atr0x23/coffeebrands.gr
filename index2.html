@@ -342,8 +342,8 @@ h1, #thanos {font-family: "coffeebrandsFont";
   <img class="mySlides w3-animate-right" src="http://psofos.gr/art_factory/assets/images/left-image.png" style="width:100%"> 
   <img class="mySlides w3-animate-left" src="http://psofos.gr/art_factory/assets/images/right-image.png" style="width:100%">
 
-  <!-- <button class="w3-button w3-hover-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-hover-white w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+  <button class="w3-button w3-hover-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-hover-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 <!-- end of event section -->
 
@@ -453,21 +453,24 @@ h1, #thanos {font-family: "coffeebrandsFont";
   }
 
   /* slideshow */
+  var slideIndex = 1;
+showDivs(slideIndex);
 
-  var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 4500);    
-    }//end of slideshow
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+/* end of slideshow */
 </script>
 
 </body>
