@@ -149,6 +149,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
+.w3-text-cbcyan{color: #73A6E4!important}
+.w3-text-cbblue{color:#212949!important}
+.w3-cbbg-white{background-color: #ffffff!important}
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
 .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
@@ -190,7 +193,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-brown,.w3-hover-text-brown:hover{color:#795548!important}
 .w3-text-cyan,.w3-hover-text-cyan:hover{color:#00bcd4!important}
 .w3-text-blue-grey,.w3-hover-text-blue-grey:hover,.w3-text-blue-gray,.w3-hover-text-blue-gray:hover{color:#607d8b!important}
-.w3-text-cbcyan,.w3-hover-text-cbcyan:hover{color:#73A6E4!important}/*thanos*/
+.w3-hover-text-cbcyan:hover{color:#73A6E4!important}/*thanos*/
 .w3-text-cbcyan2{color:#73A6E4!important;text-decoration: none;}/*thanos*/
 .w3-text-cbcyan2:hover{color:white!important; text-decoration: none;}/*thanos*/
 .w3-text-light-green,.w3-hover-text-light-green:hover{color:#8bc34a!important}
