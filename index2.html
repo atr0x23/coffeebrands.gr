@@ -25,7 +25,15 @@ body, html {
 }
 
 h1, #thanos {font-family: "coffeebrandsFont";
-    font-size: 78px;}   
+    font-size: 78px;}
+
+#thanoSmall {font-family: "coffeebrandsFont";
+    font-size: 50px;
+    line-height: 0.8;}
+
+#thanoSmaller {font-family: "coffeebrandsFont";
+    font-size: 42px;
+    line-height: 0.8;}
 /*------end of custom fonts*/
 
 .justifytext{text-align: justify;}
@@ -104,7 +112,25 @@ h1, #thanos {font-family: "coffeebrandsFont";
   transition-duration: 0.6s;
   cursor: pointer;
 }
-.cbbutton2:hover {
+
+/*cbbutton2 small*/
+.cbbutton2small {
+  border: 1px solid #73A6E4;
+  color: white;
+  background-color: #212949;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px ;
+  letter-spacing: 2px;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+
+.cbbutton2small:hover, .cbbutton2:hover {
   background-color: #73A6E4;
   text-decoration: none;
   color: #212949;
@@ -163,15 +189,33 @@ h1, #thanos {font-family: "coffeebrandsFont";
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.cardContainer {
+  padding: 12px 16px;
+  background-color: #212949;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.cardContainer::after, .row::after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
 }
+
+/* Create 3 equal columns that floats next to each other but NOT on small devices*/
+.column3 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  /* background-color: #212949; */
+}
+
 </style>
 <body>
 
@@ -185,9 +229,9 @@ h1, #thanos {font-family: "coffeebrandsFont";
     </a>
     <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Αρχική</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Η Εταιρεία</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Προϊόντα</a>
+    <a href="#ourProducts" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Προϊόντα</a>
     <a href="#franchise" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-link"></i> Franchise</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Καταστήματα</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i> Καταστήματα</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Επικοινωνία</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i></a> -->
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"><img src="/img/greece.png" style="max-width: 18px;"></a>
@@ -195,8 +239,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Αρχική</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">gr
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Η Εταιρεία</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Προϊόντα</a>
     <a href="#franchise" class="w3-bar-item w3-button" onclick="toggleFunction()">Franchise</a>
@@ -278,56 +321,88 @@ h1, #thanos {font-family: "coffeebrandsFont";
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="ourProducts">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <span class="w3-text-white" id="thanos">OurProducts</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-bg-grammes-r">
+    <!-- Works only on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-hide-small w3-auto">
+      <div class="row w3-center w3-padding-top-64">
+        <div class="column3">
+          <div class="card">
+            <img src="/img/espresso.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center">
+                <p id="thanoSmall">Megisto</p>
+                <p class="w3-large w3-text-white">Espresso</p>
+                <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
+              </div>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="card">
+            <img src="/img/signature.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center">
+                <p id="thanoSmall">Signature</p>
+                <p class="w3-large w3-text-white">Drinks</p>
+                <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
+              </div>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="card">
+            <img src="/img/athome.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center">
+                <p class="w3-large w3-text-white">Coffeebrands</p>
+                <p id="thanoSmall">@Home</p>
+                <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+            <!-- sencond row -->
+      <div class="row w3-center w3-padding-top-64">
+        <div class="column3">
+          <div class="card">
+            <img src="/img/slim.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center">
+                <p class="w3-large w3-text-white">Coffeebrands</p>
+                <p id="thanoSmall">Slim</p>
+                <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
+              </div>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="card">
+            <img src="/img/snacks.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center">
+                <p class="w3-large w3-text-white">Coffeebrands</p>
+                <p id="thanoSmall">Snacks</p>
+                <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
+              </div>
+          </div>
+        </div>
+        <div class="column3">
+          <div class="card">
+            <img src="/img/tea.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center">
+                <p class="w3-large w3-text-white">Coffeebrands</p>
+                <p id="thanoSmall">Tea</p>
+                <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
   <div class="w3-content w3-container w3-padding-64 w3-margin-bottom" id="portfolio">
-    <h1 class="w3-center">Megisto</h1>
+    <!-- <h1 class="w3-center">Megisto</h1>
     <h3 class="w3-center">Home & Office</h3>
-    <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center w3-hide-small">
-      <div class="w3-col m3">
-        <img src="/img/kapsoules.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Συμβατές με μηχ. Nespresso">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/img/pods.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands pods">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/img/babooCup.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Οικολογικό ποτήρι μπαμπού">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/img/megreeko.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ελληνικός καφές">
-      </div>
-    </div>
-
-    <div class="w3-row-padding w3-center w3-section w3-hide-small">
-      <div class="w3-col m3">
-        <img src="/img/beans.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Espresso σε κόκους">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/img/decaf.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Espresso decaf">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/img/ground.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Espresso αλεσμένος">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/img/filter.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Φίλτρου">
-      </div>
-      <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
-    </div>
+    <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br> -->
 
     <!-- on small devices -->
 
@@ -335,28 +410,64 @@ h1, #thanos {font-family: "coffeebrandsFont";
       <div class="row">
 
         <div class="column">
-          <img src="/img/kapsoules.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Συμβατές με μηχ. Nespresso">
+          <div class="card">
+            <img src="/img/espresso.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Megisto Espresso">
+            <div class="cardContainer w3-center">
+              <p id="thanoSmaller">Megisto</p>
+              <!-- <span class="w3-large w3-text-white">Espresso</span> -->
+              <a href="#_" class="cbbutton2small">Περισσότερα</a>
+            </div>
+          </div>  
         </div>
         <div class="column">
-          <img src="/img/pods.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands pods">
+          <div class="card">
+          <img src="/img/signature.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Signature Drinks">
+            <div class="cardContainer w3-center">
+              <p id="thanoSmaller">Signature</p>
+              <!-- <p class="w3-large w3-text-white">Drinks</p> -->
+              <span a href="#_" class="cbbutton2small">Περισσότερα</a></span>
+            </div>
+          </div>
         </div>
         <div class="column">
-          <img src="/img/babooCup.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Οικολογικό ποτήρι μπαμπού">
+          <div class="card">
+          <img src="/img/athome.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands at home">
+            <div class="cardContainer w3-center">
+              <p id="thanoSmaller">@Home</p>
+              <!-- <p class="w3-large w3-text-white">Drinks</p> -->
+              <span a href="#_" class="cbbutton2small">Περισσότερα</a></span>
+            </div>
+          </div>
         </div>
         <div class="column">
-          <img src="/img/decaf.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Espresso decaf">
+          <div class="card">
+          <img src="/img/slim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slim Coffee & Chocolate">
+            <div class="cardContainer w3-center">
+              <p id="thanoSmaller">Slim</p>
+              <!-- <p class="w3-large w3-text-white">Drinks</p> -->
+              <span a href="#_" class="cbbutton2small">Περισσότερα</a></span>
+            </div>
+          </div>
         </div>
         <div class="column">
-          <img src="/img/ground.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Espresso αλεσμένος">
+          <div class="card">
+          <img src="/img/snacks.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands Snacks">
+            <div class="cardContainer w3-center">
+              <p id="thanoSmaller">Snacks</p>
+              <!-- <p class="w3-large w3-text-white">Drinks</p> -->
+              <span a href="#_" class="cbbutton2small">Περισσότερα</a></span>
+            </div>
+          </div>
         </div>
         <div class="column">
-          <img src="/img/beans.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Espresso σε κόκους">
-        </div>
-        <div class="column">
-          <img src="/img/filter.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Φίλτρου">
-        </div>
-        <div class="column">
-          <img src="/img/megreeko.png"style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ελληνικός καφές">
+          <div class="card">
+          <img src="/img/tea.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands TEA">
+            <div class="cardContainer w3-center">
+              <p id="thanoSmaller">Tea</p>
+              <!-- <p class="w3-large w3-text-white">Drinks</p> -->
+              <span a href="#_" class="cbbutton2small">Περισσότερα</a></span>
+            </div>
+          </div>
         </div>
        
       </div>
