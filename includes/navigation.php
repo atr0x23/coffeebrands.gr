@@ -209,8 +209,8 @@ h1, #thanos {font-family: "coffeebrandsFont";
     <a href="../../coffeebrands/index.php#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-shopping-bag"></i> E-SHOP</a>
     <a href="../../coffeebrands/index.php#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> ΕΠΙΚΟΙΝΩΝΙΑ</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i></a> -->
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"><img src="../img/greece.png" style="max-width: 18px;"></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"><img src="../img/english.png" style="max-width:18px;"></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"><img src="../../coffeebrands/img/greece.png" style="max-width: 18px;"></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right"><img src="../../coffeebrands/img/english.png" style="max-width:18px;"></a>
     
   </div>
 
