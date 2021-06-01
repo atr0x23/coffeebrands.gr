@@ -55,7 +55,7 @@
       <div class="row w3-center w3-padding-top-64">
         <div class="column3">
           <div class="card">
-            <img src="img/espresso.jpg" style="width:100%" class="w3-hover-opacity">
+            <img src="img/kafes.jpg" style="width:100%" class="w3-hover-opacity">
               <div class="cardContainer w3-center">
                 <p id="thanoSmall">Megisto</p>
                 <p class="w3-large w3-text-white">Espresso</p>
@@ -98,7 +98,7 @@
         </div>
         <div class="column3">
           <div class="card">
-            <img src="img/snacks.jpg" style="width:100%" class="w3-hover-opacity">
+            <img src="img/snacksNew.jpg" style="width:100%" class="w3-hover-opacity">
               <div class="cardContainer w3-center">
                 <p class="w3-large w3-text-white">Coffeebrands</p>
                 <p id="thanoSmall">Snacks</p>
@@ -166,7 +166,7 @@
 
         <div class="column">
           <div class="card">
-            <img src="img/espresso.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Megisto Espresso">
+            <img src="img/kafes.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Megisto Espresso">
             <div class="cardContainer w3-center">
               <p id="thanoSmaller">Megisto</p>
               <!-- <span class="w3-large w3-text-white">Espresso</span> -->
@@ -206,7 +206,7 @@
         </div>
         <div class="column">
           <div class="card">
-          <img src="img/snacks.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands Snacks">
+          <img src="img/snacksNew.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands Snacks">
             <div class="cardContainer w3-center">
               <p id="thanoSmaller">Snacks</p>
               <!-- <p class="w3-large w3-text-white">Drinks</p> -->
