@@ -88,9 +88,9 @@
       <div class="row w3-center w3-padding-top-64">
         <div class="column3">
           <div class="card">
-            <img src="img/slim.jpg" style="width:100%" class="w3-hover-opacity">
-              <div class="cardContainer w3-center">
-                <p class="w3-large w3-text-white">Coffeebrands</p>
+            <img src="img/slimNew.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center w3-padding-top-24">
+<!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Slim</p>
                 <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
               </div>
@@ -99,8 +99,8 @@
         <div class="column3">
           <div class="card">
             <img src="img/snacksNew.jpg" style="width:100%" class="w3-hover-opacity">
-              <div class="cardContainer w3-center">
-                <p class="w3-large w3-text-white">Coffeebrands</p>
+              <div class="cardContainer w3-center w3-padding-top-24">
+<!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Snacks</p>
                 <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
               </div>
@@ -109,8 +109,8 @@
         <div class="column3">
           <div class="card">
             <img src="img/tea.jpg" style="width:100%" class="w3-hover-opacity">
-              <div class="cardContainer w3-center">
-                <p class="w3-large w3-text-white">Coffeebrands</p>
+              <div class="cardContainer w3-center w3-padding-top-24">
+<!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Tea</p>
                 <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
               </div>
@@ -122,8 +122,8 @@
         <div class="column3">
           <div class="card">
             <img src="img/morningheroes.jpg" style="width:100%" class="w3-hover-opacity">
-              <div class="cardContainer w3-center">
-                <p class="w3-large w3-text-white">Coffeebrands</p>
+              <div class="cardContainer w3-center w3-padding-top-24">
+<!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Morning Heroes</p>
                 <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
               </div>
@@ -132,8 +132,8 @@
         <div class="column3">
           <div class="card">
             <img src="img/chillcup.jpg" style="width:100%" class="w3-hover-opacity">
-              <div class="cardContainer w3-center">
-                <p class="w3-large w3-text-white">Coffeebrands</p>
+              <div class="cardContainer w3-center w3-padding-top-24">
+<!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Chillcup</p>
                 <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
               </div>
@@ -141,9 +141,9 @@
         </div>
         <div class="column3">
           <div class="card">
-            <img src="img/juiceSpot.jpg" style="width:100%" class="w3-hover-opacity">
-              <div class="cardContainer w3-center">
-                <p class="w3-large w3-text-white">Coffeebrands</p>
+            <img src="img/juice%20spot_2.jpg" style="width:100%" class="w3-hover-opacity">
+              <div class="cardContainer w3-center w3-padding-top-24">
+<!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Juice Spot</p>
                 <p><a href="#_" class="cbbutton2">Περισσότερα</a></p>
               </div>
@@ -196,7 +196,7 @@
         </div>
         <div class="column">
           <div class="card">
-          <img src="img/slim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slim Coffee & Chocolate">
+          <img src="img/slimNew.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Slim Coffee & Chocolate">
             <div class="cardContainer w3-center">
               <p id="thanoSmaller">Slim</p>
               <!-- <p class="w3-large w3-text-white">Drinks</p> -->
@@ -226,7 +226,7 @@
         </div>
         <div class="column">
           <div class="card">
-          <img src="img/juiceSpot.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Juice Spot">
+          <img src="img/juice%20spot_2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Juice Spot">
             <div class="cardContainer w3-center">
               <p id="thanoSmaller">Juice Spot</p>
               <!-- <p class="w3-large w3-text-white">Drinks</p> -->
