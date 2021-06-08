@@ -75,7 +75,7 @@
         </div>
         <div class="column3">
           <div class="card">
-            <img src="img/athome.jpg" style="width:100%" class="w3-hover-opacity">
+            <img src="img/home&office2.jpg" style="width:100%" class="w3-hover-opacity">
               <div class="cardContainer w3-center">
                 <p class="w3-large w3-text-white">Coffeebrands</p>
                 <p id="thanoSmall">@Home</p>
@@ -186,7 +186,7 @@
         </div>
         <div class="column">
           <div class="card">
-          <img src="img/athome.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands at home">
+          <img src="img/home&office2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffeebrands at home">
             <div class="cardContainer w3-center">
               <p id="thanoSmaller">@Home</p>
               <!-- <p class="w3-large w3-text-white">Drinks</p> -->
