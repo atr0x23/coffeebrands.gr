@@ -108,10 +108,10 @@
             <img src="img/fran-carousel1.jpg">
           </div>
           <div class="carousel-item">
-            <img src="img/fran-carousel2.jpg">
+            <img src="img/fran-carousel4.jpg">
           </div>
           <div class="carousel-item">
-            <img src="img/fran-carousel4.jpg">
+            <img src="img/fran-carousel2.jpg">
           </div>
           <div class="carousel-item">
             <img src="img/fran-carousel3.jpg">
