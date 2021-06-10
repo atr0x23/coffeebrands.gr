@@ -131,7 +131,7 @@
         </div>
         <div class="column3">
           <div class="card">
-            <img src="img/chillcup.jpg" style="width:100%" class="w3-hover-opacity">
+            <img src="img/chillcup1.jpg" style="width:100%" class="w3-hover-opacity">
               <div class="cardContainer w3-center w3-padding-top-24">
 <!--                <p class="w3-large w3-text-white">Coffeebrands</p>-->
                 <p id="thanoSmall">Chillcup</p>
@@ -246,7 +246,7 @@
         </div>
         <div class="column">
           <div class="card">
-          <img src="img/chillcup.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chillcup">
+          <img src="img/chillcup1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chillcup">
             <div class="cardContainer w3-center">
               <p id="thanoSmaller">Chillcup</p>
               <!-- <p class="w3-large w3-text-white">Drinks</p> -->

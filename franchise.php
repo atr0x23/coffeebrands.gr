@@ -98,17 +98,29 @@
 -->
 
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2800">
 
         <!-- Indicators -->
         
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/slider-images2.jpg">
+            <img src="img/fran-carousel1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/fran-carousel2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/fran-carousel4.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/fran-carousel3.jpg">
           </div>
           <div class="carousel-item">
             <img src="img/slider-images1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider-images2.jpg">
           </div>
           <div class="carousel-item">
             <img src="img/carousel1.jpg">
