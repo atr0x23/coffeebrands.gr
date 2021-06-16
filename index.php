@@ -322,6 +322,10 @@
         <h1 class="w3-center"><img src="img/insta.png"></h1>
         <p class="w3-center w3-text-cbblue"><b>FOLLOW US FOR MORE</b></p>
       </div>
+      
+      
+<div class="embedsocial-hashtag" data-ref="ba238e4a30ab5c371c7ba011e55cb0676723b66d" ></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+
 
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
