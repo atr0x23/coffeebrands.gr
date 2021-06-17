@@ -205,7 +205,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
     <a href="../../coffeebrands/index.php#ourProducts" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CHILLCUP</a>
     <a href="../../coffeebrands/index.php#ourProducts" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i> JUICE SPOT</a>
     <a href="franchise.php" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-link"></i> FRANCHISE</a>
-    <a href="../../coffeebrands/index.php#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i> ΚΑΤΑΣΤΗΜΑΤΑ</a>
+    <a href="../../coffeebrands/stores.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i> ΚΑΤΑΣΤΗΜΑΤΑ</a>
     <a href="../../coffeebrands/index.php#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-shopping-bag"></i> E-SHOP</a>
     <a href="../../coffeebrands/index.php#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> ΕΠΙΚΟΙΝΩΝΙΑ</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-search"></i></a> -->
@@ -219,7 +219,7 @@ h1, #thanos {font-family: "coffeebrandsFont";
     <a href="../../coffeebrands/index.php#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Η Εταιρεία</a>
     <a href="../../coffeebrands/index.php#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Προϊόντα</a>
     <a href="franchise.php" class="w3-bar-item w3-button" target="_blank" onclick="toggleFunction()">Franchise</a>
-    <a href="../../coffeebrands/index.php#shopsMobile" class="w3-bar-item w3-button" onclick="toggleFunction()">Καταστήματα</a>
+    <a href="../../coffeebrands/stores.php" class="w3-bar-item w3-button" onclick="toggleFunction()">Καταστήματα</a>
     <a href="../../coffeebrands/index.php#e-shopMobile" class="w3-bar-item w3-button" onclick="toggleFunction()">E-shop</a>
     <a href="../../coffeebrands/index.php#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Επικοινωνία</a>
     <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
