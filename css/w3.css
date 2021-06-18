@@ -171,15 +171,17 @@ font-size:16px;margin: 4px 2px ;letter-spacing: 2px;transition-duration: 0.6s;cu
 margin: 4px 2px;letter-spacing: 2px;transition-duration: 0.6s;cursor: pointer;}
 .cbbutton2small:hover, .cbbutton2:hover {background-color: #73A6E4;text-decoration: none;color: #212949;}
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
 /* First image (Logo. Full height) */
-.bgimg-1{background-image: url('../../coffeebrands/img/cb-background1.jpg'); /*http://psofos.gr/vanilla/img/1st-section.jpg*/min-height: 100%;}
+.bgimg-1{background-image: url('../../coffeebrands/img/cb-background1.jpg');min-height: 100%;}
 /* Second image (Portfolio) */
 .bgimg-2{background-image: url("../../coffeebrands/img/hand-cup.jpg");min-height: 400px;}
 /* Third image (Franchise) */
 .bgimg-4{background-image: url("../../coffeebrands/img/franchise.jpg");min-height: 400px;}
 /* Fourth image (Contact) */
 .bgimg-3{background-image: url("../../coffeebrands/img/contactUs-bg.jpg");min-height: 400px;}
+/* Fifth image (Stores) */
+.bgimg-5{background-image: url("../../coffeebrands/img/stores-top-banner9.jpg");min-height: 400px;}
 
 
 /* Colors */
