@@ -1,4 +1,7 @@
 <?php include "includes/navigation.php"; ?>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD81CpVqAQlS0UCXnCXkSN0rcfBzQYg_Ic"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="final.js"></script>
 
 <!-- back to top button  -->
 <button onclick="topFunction()" id="cbbtt" title="Go to top">
@@ -37,7 +40,7 @@
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       
-       <h3>ΕΝΤΟΣ ΕΛΛΑΔΟΣ</h3>
+       <h3>ΕΛΛΑΔΑ</h3>
         <div class="w3-container">
           
             <table class="w3-table w3-hide-small">
@@ -202,17 +205,19 @@
     
     
     <div id="menu1" class="container tab-pane fade"><br>
-      
+     
         <div class="w3-bg-grammes-l w3-hide-small">
             <div class="w3-auto w3-center w3-margin-big-bottom">
-              <iframe src="https://www.google.gr/maps/d/u/1/embed?mid=1PspkCY8MGRXcbBLilGhJMpBavu0D0oWm" width="1240" height="560"></iframe>
+<!--    OLD MAP          <iframe src="https://www.google.gr/maps/d/u/1/embed?mid=1PspkCY8MGRXcbBLilGhJMpBavu0D0oWm" width="1240" height="560"></iframe>-->
+                  <div id="map" style="height: 500px; width: 100%;"></div>
             </div>
         </div>
         
         <!-- on mobile -->
         <div class="w3-bg-grammes-l w3-hide-large w3-hide-medium">
             <div class="w3-content w3-center w3-margin-big-bottom">
-              <iframe src="https://www.google.gr/maps/d/u/1/embed?mid=1PspkCY8MGRXcbBLilGhJMpBavu0D0oWm" width="370" height="500"></iframe>
+<!--     OLD MAP         <iframe src="https://www.google.gr/maps/d/u/1/embed?mid=1PspkCY8MGRXcbBLilGhJMpBavu0D0oWm" width="370" height="500"></iframe>-->
+               <div id="map" style="width: 370px; height: 500px;"></div>
             </div>
         </div>
         
