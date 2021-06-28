@@ -14,7 +14,7 @@ function initMap() {
   // The map() method here has nothing to do with the Google Maps API.
   var markers = locations.map(function(location, i) {
     var marker = new google.maps.Marker({
-      position: location
+      position: location   
     });
     google.maps.event.addListener(marker, 'click', function(evt) {
       infoWin.setContent(location.info);
@@ -30,13 +30,10 @@ function initMap() {
 //  });
 
     
-    var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: `${"img"}/m`});
-    
-//  new MarkerClusterer(map, markers, {
-//    imagePath:
-//      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-//  });    
+  new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });    
     
 
 }
