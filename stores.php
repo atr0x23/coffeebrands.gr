@@ -40,48 +40,42 @@
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       
-       <h3>ΕΛΛΑΔΑ</h3>
+       <h3>ΠΕΡΙΟΧΕΣ</h3>
         <div class="w3-container">
           
             <table class="w3-table w3-hide-small">
-                <tr>
-                  <td>Κομοτηνή</td>
-                  <td>Ξάνθη</td>
-                  <td>Καβάλα</td>
+                <tr class="w3-text-cbcyan3">
+                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="storeKomotini.php">Ν.Ροδόπης</a></td>
+                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Ξάνθης</a></td>
+                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Καβάλας</a></td>
                 </tr>
                 <tr>
-                  <td>Δράμα</td>
-                  <td>Πολύκαστρο</td>
-                  <td>Σκύδρα</td>
+                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#_">Ν.Δράμας</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Σερρών</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Κιλκίς</a></td>
                 </tr>
                 <tr>
-                  <td>Γιαννιτσά</td>
-                  <td>Κουφάλια</td>
-                  <td>Θεσσαλονίκη</td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Θεσ/νίκης</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Πέλλας</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Κοζάνης</a></td>
                 </tr>
                 <tr>
-                  <td>Κοζάνη</td>
-                  <td>Κέρκυρα</td>
-                  <td>Λευκάδα</td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Κερκύρας</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Λευκάδας</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Αιτωλοακαρνανίας</a></td>
                 </tr>
                 <tr>
-                  <td>Αγρίνιο</td>
-                  <td>Ναύπακτος</td>
-                  <td>Αθήνα</td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Αττικής</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Αχαΐας</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Ηλίας</a></td>
                 </tr>
                 <tr>
-                  <td>Ρίο</td>
-                  <td>Πάτρα</td>
-                  <td>Βραχναίϊκα</td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Μεσσηνίας</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Κυκλάδων</a></td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ν.Δωδεκανήσων</a></td>
                 </tr>
                 <tr>
-                  <td>Κ.Αχαϊά</td>
-                  <td>Πύργος</td>
-                  <td>Καλαμάτα</td>
-                </tr>
-                <tr>
-                  <td>Σαντορίνη</td>
-                  <td>Ρόδος</td>
+                  <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Κύπρος</a></td>
                 </tr>
             </table>
             <!-- on small devices -->
@@ -134,69 +128,8 @@
                   <td>Ρόδος</td>
                 </tr>
             </table>                                 
-        
+            
          <br>
-         
-          <h3>ΕΚΤΟΣ ΕΛΛΑΔΟΣ</h3>
-            <table class="w3-table w3-hide-small">
-                    <tr>
-                      <td>Μόντρεαλ</td>
-                      <td>Μόναχο</td>
-                      <td>Στουντγκάρδη</td>
-                    </tr>
-                    <tr>
-                      <td>Νις(Σερβία)</td>
-                      <td>Λευκωσία</td>
-                      <td>Λάρνακα</td>
-                    </tr>
-                    <tr>
-                      <td>Πάφος</td>
-                      <td>Λεμεσσός</td>
-                      <td>Ριάντ</td>
-                    </tr>
-                    <tr>
-                      <td>Τζέντα</td>
-                      <td>Αλκουμφούντα</td>
-                      <td>Ταΐφ</td>
-                    </tr>
-                    <tr>
-                      <td>Αλμπάχα</td>
-                      <td>Ντουμπάι</td>
-                      <td></td>
-                    </tr>
-              </table>
-              
-              <!-- on small devices -->
-              <table class="w3-table w3-hide-medium w3-hide-large">
-                <tr>
-                  <td>Μόντρεαλ</td>
-                  <td>Μόναχο</td>
-                </tr>
-                <tr>
-                  <td>Στουντγκάρδη</td>
-                  <td>Νις(Σερβία)</td>
-                </tr>
-                <tr>
-                  <td>Λευκωσία</td>
-                  <td>Λάρνακα</td>
-                </tr>
-                <tr>
-                  <td>Πάφος</td>
-                  <td>Λεμεσσός</td>
-                </tr>
-                <tr>
-                  <td>Ριάντ</td>
-                  <td>Τζέντα</td>
-                </tr>
-                <tr>
-                  <td>Αλκουμφούντα</td>
-                  <td>Ταΐφ</td>
-                </tr>
-                <tr>
-                  <td>Αλμπάχα</td>
-                  <td>Ντουμπάι</td>
-                </tr>
-            </table> 
               
         </div>      
         

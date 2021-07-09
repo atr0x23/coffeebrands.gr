@@ -182,6 +182,8 @@ margin: 4px 2px;letter-spacing: 2px;transition-duration: 0.6s;cursor: pointer;}
 .bgimg-3{background-image: url("../../coffeebrands/img/contactUs-bg.jpg");min-height: 400px;}
 /* Fifth image (Stores) */
 .bgimg-5{background-image: url("../../coffeebrands/img/stores-top-banner9.jpg");min-height: 400px;}
+/* display text in same line */
+.w3-nowrap{white-space: nowrap;}/* thanos custom */
 
 
 /* Colors */
@@ -234,6 +236,8 @@ margin: 4px 2px;letter-spacing: 2px;transition-duration: 0.6s;cursor: pointer;}
 .w3-hover-text-cbcyan:hover{color:#73A6E4!important}/*thanos*/
 .w3-text-cbcyan2{color:#73A6E4!important;text-decoration: none;}/*thanos*/
 .w3-text-cbcyan2:hover{color:white!important; text-decoration: none;}/*thanos*/
+.w3-text-cbcyan3{color:#73A6E4!important;text-decoration: none;}/*thanos*/
+.w3-text-cbcyan3:hover{color:#212949!important; text-decoration: none;}/*thanos*/
 .w3-text-light-green,.w3-hover-text-light-green:hover{color:#8bc34a!important}
 .w3-text-indigo,.w3-hover-text-indigo:hover{color:#3f51b5!important}
 .w3-text-khaki,.w3-hover-text-khaki:hover{color:#b4aa50!important}
@@ -280,3 +284,13 @@ margin: 4px 2px;letter-spacing: 2px;transition-duration: 0.6s;cursor: pointer;}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+/* Grow */
+.hvr-grow {display: inline-block;vertical-align: middle;transform: translateZ(0);box-shadow: 0 0 1px rgba(0, 0, 0, 0);backface-visibility: hidden;-moz-osx-font-smoothing: grayscale;transition-duration: 0.3s;transition-property: transform;}
+.hvr-grow:hover,.hvr-grow:focus,.hvr-grow:active {transform: scale(1.1);}
+/* Grow Shadow */
+.hvr-grow-shadow {display: inline-block;vertical-align: middle;-webkit-transform: perspective(1px) translateZ(0);transform: perspective(1px) translateZ(0);box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;transition-duration: 0.3s;-webkit-transition-property: box-shadow, transform;transition-property: box-shadow, transform;}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0);-webkit-transform: scale(1.1);transform: scale(1.1);}
+/* grow text effect on stores page */
+.zoom {padding: 2px;transition: transform .2s;width: 2px;height: 2px;margin: 0 auto;}
+.zoom:hover {-ms-transform: scale(1.5);-webkit-transform: scale(1.5);transform: scale(1.5);}
