@@ -24,10 +24,10 @@
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">Λίστα</a>
+      <a class="nav-link w3-text-cbcyan3 active" data-toggle="tab" href="#home">Λίστα</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu1">Χάρτης</a>
+      <a class="nav-link w3-text-cbcyan3" data-toggle="tab" href="#menu1">Χάρτης</a>
     </li>
   </ul>
 
@@ -47,10 +47,10 @@
                     <th class="w3-center">Παραγγελία</th>
                 </tr>
                 <tr class="linehover w3-text-cbcyan3"><a href="storeKomotini.php">
-                    <td class="w3-center">Θησέως 1</td>
+                    <td class="w3-center"><a class="w3-text-cbcyan3" href="#">Θησέως 1</a></td>
                     <td class="w3-center">06:00 - 22:00</td>
                     <td class="w3-center">07:00 - 21:00</td>
-                    <td class="w3-center"><i class="fa fa-coffee"></i></td>
+                    <td class="w3-center"><a class="w3-text-cbcyan3" href="#"><i class="fa fa-coffee"></i></a></td>
                 </a></tr>
             </table>
             

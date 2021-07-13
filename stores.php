@@ -24,10 +24,10 @@
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">Λίστα</a>
+      <a class="nav-link w3-text-cbcyan3 active" data-toggle="tab" href="#home">Λίστα</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu1">Χάρτης</a>
+      <a class="nav-link w3-text-cbcyan3" data-toggle="tab" href="#menu1">Χάρτης</a>
     </li>
 <!--
     <li class="nav-item">
