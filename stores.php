@@ -81,8 +81,8 @@
             <!-- on small devices -->
             <table class="w3-table w3-hide-medium w3-hide-large">
                 <tr>
-                  <td>Κομοτηνή</td>
-                  <td>Ξάνθη</td>
+                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="storeKomotini.php">Κομοτηνή</a></td>
+                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Ξάνθη</a></td>
                 </tr>
                 <tr>
                   <td>Καβάλα</td>

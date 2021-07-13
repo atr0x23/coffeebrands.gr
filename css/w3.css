@@ -294,3 +294,5 @@ margin: 4px 2px;letter-spacing: 2px;transition-duration: 0.6s;cursor: pointer;}
 /* grow text effect on stores page */
 .zoom {padding: 2px;transition: transform .2s;width: 2px;height: 2px;margin: 0 auto;}
 .zoom:hover {-ms-transform: scale(1.5);-webkit-transform: scale(1.5);transform: scale(1.5);}
+/* hover on table line */
+.linehover:hover {background-color:#f5f5f5;}
