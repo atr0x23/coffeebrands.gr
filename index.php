@@ -365,14 +365,14 @@
 </div>  
 <!-- end of event section -->
 
-<!-- shops section start -->
+<!-- shops section start --
 <div class="w3-bg-grammes-l w3-hide-small">
   <div class="w3-xxxlarge w3-text-cbcyan w3-center w3-margin-bottom w3-padding-64" id="shops">Τα Καταστήματά μας​</div>
     <div class="w3-auto w3-center w3-margin-big-bottom">
       <iframe src="https://www.google.gr/maps/d/u/1/embed?mid=1PspkCY8MGRXcbBLilGhJMpBavu0D0oWm" width="1240" height="560"></iframe>
     </div>
 </div>
-<!-- shops section mobile -->
+<!-- shops section mobile --
 <div class="w3-bg-grammes-l w3-hide-large w3-hide-medium">
   <div class="w3-xxxlarge w3-text-cbcyan w3-center w3-margin-bottom w3-padding-64" id="shopsMobile">Τα Καταστήματά μας​</div>
     <div class="w3-content w3-center w3-margin-big-bottom">

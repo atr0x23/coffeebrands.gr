@@ -33,6 +33,8 @@
 
   <!-- Tab panes -->
   <div class="tab-content">
+   
+   <!-- tab list-->
     <div id="home" class="container tab-pane active"><br>
       
        <h3>ΚΟΜΟΤΗΝΗ</h3>
@@ -40,7 +42,7 @@
         <div class="w3-container">
           
             <table class="w3-table w3-hide-small">
-                <tr>
+                <tr style="background-color: lightgray;">
                     <th class="w3-center">Διεύθυνση</th>
                     <th class="w3-center">Ωράριο Καταστήματος</th>
                     <th class="w3-center">Ωράριο Delivery</th>
@@ -56,13 +58,13 @@
             
             <!-- on small devices -->
             <table class="w3-table w3-hide-medium w3-hide-large">
-               <tr class="w3-text-cbcyan3">
-                    <th>Οδός</th>
-                    <th></th>
+               <tr class="w3-text-cbcyan3" style="background-color: lightgray;">
+                    <th class="w3-center">Οδός</th>
+                    <th class="w3-center">Παραγγελία</th>
                 </tr>
-                <tr>
-                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#">Θησέως 1</a></td>
-                    <td><a class="w3-text-cbcyan3 hvr-grow-shadow" href="#"><i class="fa fa-coffee"></i></a></td>
+                <tr class="linehover">
+                    <td class="w3-center"><a class="w3-text-cbcyan3" href="#">Θησέως 1</a></td>
+                    <td class="w3-center"><a class="w3-text-cbcyan3" href="#"><i class="fa fa-coffee"></i></a></td>
                 </tr>
                
             </table>                                 
@@ -74,6 +76,8 @@
         <div class="w3-padding-64"></div>        
     </div>
     
+    
+    <!-- tab map-->
     <div id="menu1" class="container tab-pane fade"><br>
      
         <div class="w3-bg-grammes-l">
@@ -81,14 +85,6 @@
                 <div id="map" style="height: 500px; width: 100%;"></div>
             </div>
         </div>
-        
-        <!-- on mobile --
-        <div class="w3-bg-grammes-l w3-hide-large w3-hide-medium">
-            <div class="w3-content w3-center w3-margin-big-bottom">
-<!--     OLD MAP         <iframe src="https://www.google.gr/maps/d/u/1/embed?mid=1PspkCY8MGRXcbBLilGhJMpBavu0D0oWm" width="370" height="500"></iframe>  --
-               <div id="map" style="height: 400px; width: 100%;"></div>
-            </div>
-        </div>  -->
         
     </div>
  
